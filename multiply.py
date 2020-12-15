@@ -1,4 +1,5 @@
 #This program multiplies two numbers
+#Testing my github connection
 while True:
     try:
         x = int(input('enter a number'))
