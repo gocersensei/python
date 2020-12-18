@@ -16,8 +16,11 @@ n= int(input("Enter the number of sides: "))
 
 #Compute the area of the polygon
 
-area = (n*s**2) / (4 * tan(pi /n))
+area = (n * s ** 2) / (4 * tan(pi / n))
 
 #Display the result
 
 print("The are of the polygon is ", area)
+
+
+
