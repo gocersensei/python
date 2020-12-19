@@ -1,6 +1,6 @@
 ##
 # Determine and display the whether an integer entered by the
-#user is even or odd.
+#user is even or odd...
 ##
 
 #Read the integer from the user
