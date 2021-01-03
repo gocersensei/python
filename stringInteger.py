@@ -3,7 +3,7 @@
 # is an integer.
 #
 
-## Determine if a string contains valid representation
+# Determine if a string contains valid representation
 # of an integer
 # @param s the string to check
 # @return True if s represents an integer. False otherwise.
@@ -21,6 +21,7 @@ def isInteger(s):
         return True
     return False
 
+
 # Demonstrate the isInteger function
 def main():
     s = input("Enter a string: ")
@@ -28,6 +29,7 @@ def main():
         print("That string represents an integer.")
     else:
         print("That string does not represent an integer.")
+
 
 # Only call the main function when this file has not been imported
 
@@ -42,4 +44,3 @@ if __name__ == "__main__":
 # when the program starts running. It contains "__main__" when
 # the file is executed directly by Python. It contains the
 # name of the module when the file is imported into another program.
-
