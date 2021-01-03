@@ -1,9 +1,9 @@
-#This program calculates averages
+# This program calculates averages
 
 count = 0
-sum = 0
+mySum = 0
 for value in [9, 41, 12, 3, 74, 15]:
     count = count + 1
-    sum = sum + value
+    mySum = mySum + value
 
-print('avr', sum / count)
+print('avr', mySum / count)
