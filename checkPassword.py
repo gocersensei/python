@@ -4,20 +4,20 @@
 # @param password the password to check
 # @return True if the password is good, False otherwise
 
-def checkPassword(password):
+def check_password(password):
     has_upper = False
     has_lower = False
     has_num = False
 
     # Check each character in the password and see which requirement it meets
     for ch in password:
-        if ch >= "A" and ch <= "Z":
+        if "A" <= ch <= "Z":
             has_upper = True
-        elif ch >= "a" and ch <= "z":
+        elif "a" <= ch <= "z":
             has_lower = True
-        elif ch >= "0" and ch <= "9":
+        elif "0" <= ch <= "9":
             has_num = True
-# If the password has all 4 properties
+    # If the password has all 4 properties
     if len(password) >= 8 and has_upper and has_lower and has_num:
         return True
     # The password is missing at least one property
@@ -25,12 +25,14 @@ def checkPassword(password):
 
     # Demonstrate the password checking function
 
+
 def main():
     p = input("Enter a password: ")
-    if checkPassword(p):
+    if check_password(p):
         print("That's a good password.")
     else:
         print("That isn't a good password.")
+
 
 # Call the main function only if the files has not been imported into another program
 

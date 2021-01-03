@@ -18,7 +18,7 @@ result = str(r) + result
 q = q // NEW_BASE
 
 # Keep on looping until q == 0
-while q > 0 :
+while q > 0:
     r = q % NEW_BASE
     result = str(r) + result
     q = q // NEW_BASE
