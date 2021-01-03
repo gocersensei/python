@@ -13,7 +13,8 @@ TSP_PER_CUP = 48
 # @param unit the unit of measure (cup, tablespoon or teaspoon)
 # return a string representing the measurement in reduced form
 
-def reduceMeasure(num, unit):
+
+def reduce_measure(num, unit):
     # Compute the number of teaspoons that the parameters represent
     unit = unit.lower()
 
@@ -65,20 +66,22 @@ def reduceMeasure(num, unit):
 
     return result
 
-def launchNow():
-    print("59 teaspoons is %s." % reduceMeasure(59, "teaspoons"))
-    print("59 tablespoons is %s." % reduceMeasure(59, "tablespoons"))
-    print("1 teaspoon is %s." % reduceMeasure(1, "teaspoon"))
-    print("1 tablespoon is %s." % reduceMeasure(1, "tablespoon"))
-    print("1 cup is %s." % reduceMeasure(1, "cup"))
-    print("4 cups is %s." % reduceMeasure(4, "cups"))
-    print("3 teaspoons is %s." % reduceMeasure(3, "teaspoons"))
-    print("6 teaspoons is %s." % reduceMeasure(6, "teaspoons"))
-    print("95 teaspoons is %s." % reduceMeasure(95, "teaspoons"))
-    print("96 teaspoons is %s." % reduceMeasure(96, "teaspoons"))
-    print("97 teaspoons is %s." % reduceMeasure(97, "teaspoons"))
-    print("98 teaspoons is %s." % reduceMeasure(98, "teaspoons"))
-    print("99 teaspoons is %s." % reduceMeasure(99, "teaspoons"))
+
+def launch_now():
+    print("59 teaspoons is %s." % reduce_measure(59, "teaspoons"))
+    print("59 tablespoons is %s." % reduce_measure(59, "tablespoons"))
+    print("1 teaspoon is %s." % reduce_measure(1, "teaspoon"))
+    print("1 tablespoon is %s." % reduce_measure(1, "tablespoon"))
+    print("1 cup is %s." % reduce_measure(1, "cup"))
+    print("4 cups is %s." % reduce_measure(4, "cups"))
+    print("3 teaspoons is %s." % reduce_measure(3, "teaspoons"))
+    print("6 teaspoons is %s." % reduce_measure(6, "teaspoons"))
+    print("95 teaspoons is %s." % reduce_measure(95, "teaspoons"))
+    print("96 teaspoons is %s." % reduce_measure(96, "teaspoons"))
+    print("97 teaspoons is %s." % reduce_measure(97, "teaspoons"))
+    print("98 teaspoons is %s." % reduce_measure(98, "teaspoons"))
+    print("99 teaspoons is %s." % reduce_measure(99, "teaspoons"))
+
 
 # Call the main function
-launchNow()
+launch_now()
