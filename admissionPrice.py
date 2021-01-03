@@ -14,7 +14,7 @@ BABY_LIMIT = 2
 CHILD_LIMIT = 12
 ADULT_LIMIT = 64
 
-#Create a variable to hold the total admission cost for all guests
+# Create a variable to hold the total admission cost for all guests
 total = 0
 
 # Keep on reading ages until the user enters a blank line
@@ -22,7 +22,7 @@ line = input("Enter the age of the guest (blank to finish): ")
 while line != "":
     age = int(line)
 
-    #Add the correct amount to the the total
+    # Add the correct amount to the the total
     if age <= BABY_LIMIT:
         total = total + BABY_PRICE
     elif age <= CHILD_LIMIT:
@@ -32,13 +32,13 @@ while line != "":
     else:
         total = total + SENIOR_PRICE
 
-    #Read the next line from the user
+    # Read the next line from the user
     line = input("Enter the age of the guest (blank to finish): ")
 
-#Display the total due for the group, formatted using two decimal places
+# Display the total due for the group, formatted using two decimal places
 print("The total for that group us $%.2f" % total)
 
 
-#The first condition is not necessary with the current admission
-#prices. However, including it makes it easy to start charging
-#for babbies in the future.
+# The first condition is not necessary with the current admission
+# prices. However, including it makes it easy to start charging
+# for babies in the future.
