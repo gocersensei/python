@@ -3,7 +3,7 @@
 # with "I" and by capitalizing the first letter of each sentence
 #
 
-## Capitalize the appropriate characters in a string
+# Capitalize the appropriate characters in a string
 # @param s the string that needs capitalization
 # @return a new string with the capitalization improved
 
@@ -11,18 +11,18 @@ def capitalize(s):
     # Correct the capitalization for i
     result = s.replace(" i ", " I ")
 
-    #Capitalize the first character of the string
+    # Capitalize the first character of the string
     if len(s) > 0:
-        result = result[0].upper() + result[1 : len(result)]
+        result = result[0].upper() + result[1: len(result)]
 
-    #Capitalize the first letter that follows a ".","!" or "?"
+    # Capitalize the first letter that follows a ".","!" or "?"
     pos = 0
     while pos < len(s):
         if result[pos] == "." or result[pos] == "!" or result[pos] == "?":
             # Move past the ".", "!" or "?"
             pos = pos + 1
 
-            #Move past any spaces
+            # Move past any spaces
             while pos < len(s) and result[pos] == " ":
                 pos = pos + 1
 
@@ -31,12 +31,13 @@ def capitalize(s):
             # equivalent
 
             if pos < len(s):
-                result = result[0 : pos] + result[pos].upper() + result[pos + 1 : len(result)]
+                result = result[0: pos] + result[pos].upper() + result[pos + 1: len(result)]
 
-        #Move to the next character
+        # Move to the next character
         pos = pos + 1
 
     return result
+
 
 # Demonstrate the capitalize function
 
@@ -45,5 +46,6 @@ def main():
     capitalized = capitalize(s)
     print("It is capitalized as:", capitalized)
 
-#Call the main function
+
+# Call the main function
 main()
