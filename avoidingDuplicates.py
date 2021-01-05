@@ -1,7 +1,7 @@
 #
 # Read a collection of words entered by the user. Display each word
 # entered by the user only once, in the same order that the words
-# were entered.
+# were entered..
 #
 
 # Begin reading words into a list
