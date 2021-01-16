@@ -14,4 +14,3 @@ for ch in s:
 
 # Display the result
 print("That string contained", len(characters), "unique character(s).")
-
