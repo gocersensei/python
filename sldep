@@ -1,0 +1,13 @@
+#By using this software, depreciation is calculated
+#by straight line method
+
+purchaseCost = float(input("Enter the initial purchase cost :   "))
+residualValue = float(input("Enter residual value :    "))
+lifeSpan = float(input("Enter the lifespan  :   "))
+
+#calculate the annual dep using the slm
+annualDep = (purchaseCost-residualValue)/lifeSpan
+
+# display the result to the user on the screen
+
+print(annualDep)
